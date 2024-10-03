@@ -64,7 +64,7 @@ void init_timer(void){
 
 
 void ram_turn_on_after(uint8_t targetMs){
-    TA0CCR0 = 10-1; //Start Timer, Compare value for Up Mode to get 1ms delay per loop
+    TA0CCR0 = 2-1; //Start Timer, Compare value for Up Mode to get 1ms delay per loop
     RCCTL0 = (RCKEY | RCRS2OFF);
     uint8_t countMs = 0;
 
