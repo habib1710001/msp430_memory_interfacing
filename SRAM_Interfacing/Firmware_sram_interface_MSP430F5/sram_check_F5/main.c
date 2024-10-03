@@ -89,20 +89,5 @@ int main(void)
     while(1){
         memory_continuous_write (TARGET_MEMORY_START_ADDRESS0, BYTE_BLOCK0, 0xFF);
         ram_turn_on_after(TIME_DISABLED_CHEKCK0_MS);
-
-        memory_continuous_write (TARGET_MEMORY_START_ADDRESS0, BYTE_BLOCK0, 0xFF);
-        ram_turn_on_after(TIME_DISABLED_CHEKCK1_MS);
-
-        memory_continuous_write (TARGET_MEMORY_START_ADDRESS0, BYTE_BLOCK0, 0xFF);
-        ram_turn_on_after(TIME_DISABLED_CHEKCK2_MS);
-
-        memory_continuous_write (TARGET_MEMORY_START_ADDRESS0, BYTE_BLOCK0, 0xFF);
-        ram_turn_on_after(TIME_DISABLED_CHEKCK3_MS);
-
-        memory_continuous_write (TARGET_MEMORY_START_ADDRESS0, BYTE_BLOCK0, 0xFF);
-        ram_turn_on_after(TIME_DISABLED_CHEKCK4_MS);
-
-        memory_continuous_write (TARGET_MEMORY_START_ADDRESS0, BYTE_BLOCK0, 0xFF);
-        ram_turn_on_after(TIME_DISABLED_CHEKCK4_MS);
     }
 }
