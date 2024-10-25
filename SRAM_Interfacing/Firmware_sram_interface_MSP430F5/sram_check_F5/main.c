@@ -9,7 +9,7 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#define TARGET_MEMORY_START_ADDRESS0 ((uint8_t*)0x001C00)
+#define TARGET_MEMORY_START_ADDRESS0 ((uint8_t*)0x003400)
 
 
 #define RCCTL0_BASE_ADDRESS 0x000158
@@ -27,7 +27,6 @@
 
 
 #define BYTE_BLOCK0 2048
-#define BYTE_BLOCK1 20
 
 #define TIME_DISABLED_CHEKCK0_MS 1
 #define TIME_DISABLED_CHEKCK1_MS 5
@@ -136,11 +135,11 @@ int main(void)
         char * mypc = (char *) TARGET_MEMORY_START_ADDRESS0;
 
 
-        RCCTL0 = (RCKEY | RCRS7OFF);
+        RCCTL0 = (RCKEY | RCRS2OFF);
 
-        delay_ms(40);
+        delay_ms(60);
 
-        RCCTL0 = (RCKEY | RCRS7ON);
+        RCCTL0 = (RCKEY | RCRS2ON);
 
 
 
